@@ -6,18 +6,18 @@ import express from 'express'
 const app = express()
 
 
-
+app.set('view engine', 'ejs')
 
 
 
 
 app.get('/', function(req, res) {
   res.send('')
-  res.render
+  res.render('index')
 })
 
 
 
-app.listen(3000, function() {
+app.listen(3002, function() {
 
 })
