@@ -7,6 +7,15 @@
   <title>Document</title>
 </head>
 <body>
-  hello
+  <h1>Student List</h1>
+  <ul>
+    <% students.forEach(students => { %>
+      <li>
+				<%= students.name %> 
+				- 
+				<%= students.score %>
+			</li>
+    <% }) %>
+  </ul>
 </body>
 </html>
